@@ -2,8 +2,11 @@ module ApiFlashcards
   class MainController < ApplicationController
     before_action :authenticate
 
+    # Welcome message
+    # GET request '/'
+    # @return [JSON]
     def index
-      render json: "{\"message\":\"Welcome!\"}"
+      render json: { message: 'Welcome!' }
     end
 
     private
